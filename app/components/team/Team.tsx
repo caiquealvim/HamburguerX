@@ -3,7 +3,7 @@ import TeamCard from './TeamCard'
 
 const Team = () => {
   return (
-    <div className='pt-[5rem] pb-[3rem] bg-zinc-200'>
+    <div className='pt-[5rem] pb-[3rem] bg-zinc-200' id='chefs'>
         <h1 data-aos="fade-up"  data-aos-duration="2000" className='heading'>
             Meet Our <span className='text-red-600'> Cooker Chefs</span>
         </h1>

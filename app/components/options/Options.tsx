@@ -6,7 +6,7 @@ import img3 from "@/public/images/hambuguer.webp"
 
 const Options = () => {
   return (
-    <div className='pt-[5rem] pb-[3rem]'>
+    <div className='pt-[5rem] pb-[3rem]' id='best'>
       <h1 data-aos="fade-up"  data-aos-duration="4000" className='heading'>
         the best burguers you will find here <br /> Love and
        Care
