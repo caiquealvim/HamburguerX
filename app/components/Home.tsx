@@ -1,14 +1,18 @@
 'use client'
 import React, { useEffect } from 'react'
 import Hero from './hero/Hero'
-import Options from './options/Options'
+import Options from './pastor/Pastor'
 import BestBurguer from './BestFood/bestBurguer'
-import Delivery from './delivery/Delivery'
+import Delivery from './MissionariaJaq/Delivery'
 import Team from './team/Team'
 import Email from './senEmail/Email'
 import Footer from './footer/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Missionaria from './Missionaria/Missionaria'
+import Radio from '../radio/Radio'
+import Visite from './visite/Visite'
+import RadioPhone from './RadioAdsp/RadioPhone'
 
 
 
@@ -29,10 +33,14 @@ const Home = () => {
 
   return (
     <div className='overflow-hidden'>
-      <Hero/>
+      <Hero/>    
+      <Radio/>  
       <Options/>
+      <Missionaria/>
       <BestBurguer/>
+      <Visite/>
       <Delivery/>
+      <RadioPhone/>
       <Team/>
       <Email/>
       <Footer/>

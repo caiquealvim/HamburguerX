@@ -3,7 +3,7 @@ import React from 'react'
 const Email = () => {
   return (
     <div className='pt-[5rem] pb-[5rem]'>
-        <div className='text-center' data-aos="zoom-out-right"  data-aos-duration="1000">
+        <div className='text-center' data-aos="zoom-out-right"  data-aos-duration="2000">
             <h1 className='text-[18px] sm:text-[28px] md:text-[35px] text-black md:w-[60%] mx-auto font-bold'>
                 Send your Email for join hot offers
             </h1>

@@ -1,72 +1,58 @@
 'use client'
 import React from 'react'
-import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter } from 'react-icons/bi'
-import { MdFoodBank } from 'react-icons/md'
+import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from 'react-icons/bi'
+import Mapa from "@/public/images/map.png"
+import QrCode from "@/public/images/qrcode.png"
+import Image from 'next/image'
+import { FaMapMarked, FaMapMarkerAlt } from 'react-icons/fa'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='pt-[5rem] pb-[3rem] bg-gray-900' id='footer' >
+    <div className=' pt-[5rem] pb-[3rem]  bg-green-900 opacity-90' id='footer' >
         <div className='w-[80%] pb-[2rem]  border-b-[2px] border-b-gray-300 border-opacity-50 mx-auto
-        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[3rem] items-center'>
+        grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] items-center justify-center'>
             <div>
+            <div className='w-[80%] text-center flex flex-col gap-2 text-white'>
+            <h2 className='text-[30px]'>Localização</h2>
+            <a target='_blank' href="https://www.google.com/maps/place/R.+Abel+da+Silva,+69+-+Cruz+das+Armas,+Jo%C3%A3o+Pessoa+-+PB,+58085-370/@-7.1400735,-34.8886908,18.75z/data=!4m6!3m5!1s0x7ace841dbe5e79f:0x1e98289b1121e805!8m2!3d-7.1397732!4d-34.8882255!16s%2Fg%2F11fy23n9t7?entry=ttu">
+                <Image src={Mapa} alt="mapa" width={400} height={300} />
+            </a>
+            <div className='flex'>
+            <FaMapMarkerAlt/> 
+            <p> Rua Abel da silva,69-Cruz das Armas</p>
+            </div>
+        </div>
+            </div>
+
+            <div className='mx-auto'>
+                <h1 className='text-center text-[23px] font-semibold mb-[2rem] text-white '>Doação</h1>
+                <Image src={QrCode} alt="Qr-code" width={300} height={300} className='w-[200px] h-[300px]'/>
+            </div>
+
+
+            <div className='flex items-center'>
                 <div className='flex item-center text-white space-x-2'>
-                <MdFoodBank className='w-[5rem] h-[5rem] sm:w-[2.5rem] sm:h-[2.5rem] text-red-600'/>
-                 <h1 className='text-[20px] sm:text-[30px] font-semibold'>Food Dinner</h1>
+                 <h1 className='text-[20px] sm:text-[30px] font-semibold'>Dias Abertos</h1>
                 </div>
                 <p className='text-white text-opacity-60 mt-[0.6rem]'>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Quarta-Feira <span className='text-yellow-300'>19:30</span> 
                 </p>
-                <p className='text-white mt-2'>
-                    suporte@example.com-
+                <p className='text-white text-opacity-60 mt-[0.6rem]'>
+                   Quinta-Feira <span className='text-yellow-300'>19:30</span> 
                 </p>
-                <p className='text-white mt-2'>
-                    (83)98744-4554
+                <p className='text-white text-opacity-60 mt-[0.6rem]'>
+                  Sexta-Feira <span className='text-yellow-300'>19:30</span> 
                 </p>
-            </div>
-
-            <div>
-                <h1 className='text-[23px] font-semibold mb-[2rem] text-white '>Products</h1>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>MilkShake</p>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>FrenchFries</p>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>Main course</p>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>HamburguerX</p>
-
-            </div>
-
-            <div>
-                <h1 className='text-[23px] font-semibold mb-[2rem] text-white '>Quick Link</h1>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>Home</p>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>About Us</p>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>Service</p>
-                <p className='mt-[0.7rem] text-white opacity-60 hover:text-yellow-300 transition-all duration-200 cursor-pointer
-                w-fit'>Delivery</p>
-            </div>
-
-            <div>
-                <div className='flex item-center text-white space-x-2'>
-                 <h1 className='text-[20px] sm:text-[30px] font-semibold'>Open Days</h1>
+                <p className='text-white text-opacity-60 mt-[0.6rem]'>
+                   Domingo <span className='text-yellow-300'>18:30</span> 
+                </p>
+                <div className='mt-3 flex flex-col gap-3'>
+                <Link href="https://www.youtube.com/@assembleiadedeussemeandoap7249" target='_blank'> <BiLogoYoutube  className= ' bg-green-700  rounded-md  text-white cursor-pointer text-[40px]'/></Link> 
+                 <Link href="https://www.facebook.com/adsp.mrv?mibextid=PtKPJ9" target='_blank'>  <BiLogoFacebook className= ' bg-green-700  rounded-md  text-white cursor-pointer text-[40px]'/></Link>
+                <Link href="https://www.instagram.com/adspmrv/?img_index=1" target='_blank'><BiLogoInstagram  className= ' bg-green-700  rounded-md  text-white cursor-pointer text-[40px]'/>
+                </Link>
                 </div>
-                <p className='text-white text-opacity-60 mt-[0.6rem]'>
-                    Monday at <span className='text-yellow-300'>10:50 PM</span> 
-                </p>
-                <p className='text-white text-opacity-60 mt-[0.6rem]'>
-                    Saturday at <span className='text-yellow-300'>10:50 PM</span> 
-                </p>
-                <p className='text-white mt-2'>
-                    (83)98744-4554
-                </p>
-                <p className='mt-3 flex items-center gap-3'>
-                    <BiLogoFacebook className='text-yellow-300 cursor-pointer text-[30px]'/>
-                    <BiLogoTwitter  className='text-yellow-300 cursor-pointer text-[30px]'/>
-                    <BiLogoInstagram  className='text-yellow-300 cursor-pointer text-[30px]'/>
-                </p>
             </div>
         </div>
         <div>
