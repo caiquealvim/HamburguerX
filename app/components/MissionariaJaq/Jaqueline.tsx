@@ -4,9 +4,9 @@ import Missionaria from "@/public/images/missionaria12.png"
 import { FaHeart } from "react-icons/fa6";
 
 
-const Delivery = () => {
+const Jaqueline = () => {
   return (
-    <div className='pt-[3rem] pb-[3rem] bg-white' id='delivery' >
+    <div className='pt-[3rem] pb-[3rem] bg-white' id='missionaria' >
         <div className='w-[60%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 '>
             <div data-aos="zoom-out-down"  data-aos-duration="1000">
                 <Image className=' rounded-lg' src={Missionaria} alt="delivery" width={400} height={300} />
@@ -46,4 +46,4 @@ const Delivery = () => {
   )
 }
 
-export default Delivery
+export default Jaqueline

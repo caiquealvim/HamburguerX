@@ -12,7 +12,7 @@ import { BsPlayBtn } from 'react-icons/bs';
 
 const RadioPhone = () => {
   return (
-    <div className=' w-full text-white'>
+    <div  data-aos="fade-up"  data-aos-duration="1000" id='radio' className=' w-full text-white'>
       <div className='h-auto bg-gradient-to-r from-slate-950  to-lime-950'>
         <div className='w-[80%] grid grid-cols-1 md:grid-cols-2 items-center justify-center mx-auto pt-20 md:pt-1'>
 

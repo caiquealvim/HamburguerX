@@ -2,7 +2,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import NewBurguer from './NewBurguer';
+import NewBurguer from './NovoConjunto';
 
 
 const responsive = {
@@ -24,11 +24,11 @@ const responsive = {
   };
 
 
-const BestBurguer = () => {
+const ConjuntoAdsp = () => {
   return (
-    <div className=' pt-[3rem] pb-[3rem] bg-gradient-to-r from-lime-900 to-gray-800'>
+    <div id='igreja' className='pt-[3rem] pb-[3rem] bg-gradient-to-r from-lime-900 to-gray-800'>
         <h1 data-aos="fade-up"  data-aos-duration="1000" className='heading font-bold'>Conheça os Conjuntos da <span className='text-green-600'>ADSP</span></h1>
-        <div data-aos="zoom-out-right"  data-aos-duration="1000" className='w-[80%] mt-[4rem] mx-auto'>
+        <div data-aos="zoom-out-right"  data-aos-duration="1000" className='w-[80%] h-auto mt-[4rem] mx-auto'>
             
         <Carousel
         additionalTransfrom={0}
@@ -51,21 +51,21 @@ const BestBurguer = () => {
              <NewBurguer
             title="AIEB"
             image ="/images/conjuntoIrmas.jpeg"
-            reviews = "Conjunto das irm~s da igreja semeando a palavra, mulheres de fé"
-            price = "Conjunto das Mulheres"
+            reviews = "Conjunto das irmãs da igreja semeando a palavra, mulheres de fé"
+            price = "Conjunto Cantico Novo"
             />
            
            <NewBurguer
-            title="BL"
+            title="Brilho Celeste"
             image ="/images/adolescentes.jpeg"
             reviews = "Brilho Celeste composto pelos adolescentes para gloria de Deus"
             price = "Conjunto dos Adolescentes"
             />
            
            <NewBurguer
-            title="JD"
+            title="Jardim de Deus"
             image ="/images/Crianças.jpeg"
-            reviews = "o Conjunto Jardim de Deus é composto pelas crianças, uma benção para Honra e Glória do Senhor jesus cristo"
+            reviews = "As crianças fazem parte do Conjunto Jardim de Deus,uma benção para Honra e Glória do Senhor jesus cristo"
             price = "JARDIM DE DEUS"
             />
             <NewBurguer
@@ -88,4 +88,4 @@ const BestBurguer = () => {
   )
 }
 
-export default BestBurguer
+export default ConjuntoAdsp

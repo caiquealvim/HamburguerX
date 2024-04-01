@@ -2,17 +2,20 @@
 import React, { useEffect } from 'react'
 import Hero from './hero/Hero'
 import Options from './pastor/Pastor'
-import BestBurguer from './BestFood/bestBurguer'
-import Delivery from './MissionariaJaq/Delivery'
+import BestBurguer from './Conjuntos/ConjuntoAdsp'
+import Delivery from './MissionariaJaq/Jaqueline'
 import Team from './team/Team'
-import Email from './senEmail/Email'
+import Email from './Templo/TemploX'
 import Footer from './footer/Footer'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Missionaria from './Missionaria/Missionaria'
-import Radio from '../radio/Radio'
+import Radio from './radio/Radio'
 import Visite from './visite/Visite'
 import RadioPhone from './RadioAdsp/RadioPhone'
+import Pastor from './pastor/Pastor'
+import ConjuntoAdsp from './Conjuntos/ConjuntoAdsp'
+import TemploAdsp from './Templo/TemploX'
+
 
 
 
@@ -35,14 +38,13 @@ const Home = () => {
     <div className='overflow-hidden'>
       <Hero/>    
       <Radio/>  
-      <Options/>
-      <Missionaria/>
-      <BestBurguer/>
+      <ConjuntoAdsp/>
+      <Pastor/>
       <Visite/>
       <Delivery/>
       <RadioPhone/>
       <Team/>
-      <Email/>
+      <TemploAdsp/>
       <Footer/>
     </div>
   )

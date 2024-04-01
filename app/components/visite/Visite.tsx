@@ -2,7 +2,7 @@ import React from 'react'
 
 const Visite = () => {
   return (
-    <div className='w-[100%] h-auto bg-gradient-to-r from-slate-950  to-lime-950 pb-10 pt-10 text-white'>
+    <div  data-aos="fade-down"  data-aos-duration="1000" id='horario' className='w-[100%] h-auto bg-gradient-to-r from-slate-950  to-lime-950 pb-10 pt-10 text-white'>
         <h1 className='text-center text-4xl mb-10'>ADSP chama voce para receber uma palavra de Deus</h1>
          <div className='w-[50%] grid grid-cols-1 md:grid-cols-2  justify-center items-center mx-auto '>
             <div>

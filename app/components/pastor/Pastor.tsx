@@ -1,41 +1,52 @@
 import React from 'react'
 import Image from 'next/image'
-import pastor from '@/public/images/pastor21.png'
-import Logo from'@/public/images/logoigreja.png'
+import pastor from '@/public/images/pastor001.png'
+import { DiSenchatouch } from "react-icons/di";
 
 const Pastor = () => {
   return (
-    <div className='pt-10 h-auto md:h-[40vh] pb-10 bg-gradient-to-r from-lime-800 to-slate-950 text-white'>
-      
-      <div className='w-[80%] h-auto mx-auto grid items-center grid-cols-1 md:grid-cols-2  gap-[2rem] '>
-        <div className='flex items-center justify-center'>
-        <Image src={pastor} alt='pastor' width={600} height={600} className='ml-20 lg:pt-[1.4rem] xl:-mt-[4.5rem]'/>
-        <Image src={Logo} alt='pastor' width={200} height={200} className='hidden md:flex -mt-[9rem] opacity-40 md:-ml-[5rem]'/>
+    <div  className='pt-[3rem] pb-[3rem]  bg-zinc-200' id='pastor' >
+    <div className='w-[60%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 '>
+        <div data-aos="zoom-out-down"  data-aos-duration="1000">
+            <Image className=' rounded-lg' src={pastor} alt="delivery" width={400} height={300} />
         </div>
-        <div className=' md:w-[80%] text-center md:-mt-[8rem] flex flex-col justify-center items-center mx-auto'>
-          <h1>Olá, seja bem vindo Sou o </h1>
-          <span className='text-3xl font-semibold text-green-200'>Pastor Almeida</span>
-          <div className='pt-5 flex items-center text-center justify-center '>
-          <p>
-          Pastoreiem o rebanho de Deus que está aos seus cuidados. 
-          Olhem por ele, não por obrigação, mas de livre vontade, como Deus quer. 
-          Não façam isso por ganância, mas com o desejo de servir. Não ajam como dominadores dos que 
-          foram confiados a vocês, mas como exemplos para o rebanho. Quando se manifestar o Supremo Pastor, 
-          vocês receberão a imperecível coroa da glória.
-          1 Pedro 5:2-4
-
-    
-
-          </p>
-          </div>
-        
+        <div data-aos="zoom-out-left"  data-aos-duration="1000">
+            <h1 className='text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] font-bold leading-[3rem] md:leading-[4rem]'>
+             <span className='text-green-600'> Pastor</span>  Almeida
+            </h1> 
+            <p className='text-[17px] mt-4 text-black opacity-60'>
+            <i>
+            E ele designou alguns para apóstolos, outros para profetas, outros para evangelistas, e outros para pastores e mestres, com o fim de preparar os santos para a obra do ministério, para que o corpo de Cristo seja edificado,
+            Efésios 4:11-12
+            </i>
+            </p>
+            <div className='flex items-center space-x-3 mt-[2rem]'>
+            <DiSenchatouch className='text-green-600 text-[50px]' />
+                <h1 className='text-[18px] text-black font-medium'>
+                   Pastor Presidente da ADSP
+                </h1>
+            </div>
+            <div className='flex items-center space-x-3 mt-[2rem]'>
+            <DiSenchatouch className='text-green-600 text-[50px]' />
+                <h1 className='text-[18px] text-black font-medium'>
+                    Homem de Deus
+                </h1>
+            </div>
+            <div className='flex items-center space-x-3 mt-[2rem]'>
+            <DiSenchatouch className='text-green-600 text-[50px]' />
+                <h1 className='text-[18px] text-black font-medium'>
+                    Proclamador de Louvor
+                </h1>
+            </div>
         </div>
-
-
-      </div>
-
-      </div>
+    </div>
+  
+</div>
   )
 }
 
 export default Pastor
+
+
+
+     
